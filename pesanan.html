@@ -123,41 +123,54 @@
 	<!-- End Breadcrumbs -->
 			
 	<!-- Shopping Cart -->
-	<div class="shopping-cart section">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<!-- Shopping Summery -->
-					<table class="table shopping-summery">
-						<thead>
-							<tr class="main-hading">
-								<th></th>
-								<th></th>
-								<th class="text-center">AMOUNT</th>
-								<th class="text-center">TICKET TYPE</th>
-								<th class="text-center">TOTAL</th> 
-								<th class="text-center"><i class="ti-trash remove-icon"></i></th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="image" data-title="No"><img src="images/green.jpg" alt="#"></td>
-								<td class="product-des" data-title="Description">
-									<p class="product-name"><a href="#">Carnaval Ancol</a></p>
-									<p class="product-des">Enjoy for this event, Thankyou for order</p>
-								</td>
-								<td class="amount" data-title="amount"><span>2 Ticket</span></td>
-								<td class="type" data-title="type"><span>Gold</span></td>
-								<td class="price" data-title="Price"><span>IDR K</span></td>
-								
-										</div>
-									</div>
-									<!--/ End Input Order -->
-								</td>
-							
-						</tbody>
-					</table>
-					<!--/ End Shopping Summery -->
+<div class="shopping-cart section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Shopping Summary -->
+                <table class="table shopping-summery">
+                    <thead>
+                        <tr class="main-hading">
+                            <th>Event</th>
+                            <th class="text-center">Jumlah Tiket</th>
+                            <th class="text-center">Jenis Tiket</th>
+                            <th class="text-center">Total Bayar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- Event Name, Poster, and Description -->
+                            <td class="product-des" data-title="Event">
+                                <div style="display: flex; align-items: center;">
+                                    <img src="images/green.jpg" alt="Carnaval Ancol" style="width: 100px; height: auto; margin-right: 20px;">
+                                    <div>
+                                        <p class="product-name"><a href="#">Carnaval Ancol</a></p>
+                                        <p class="product-des">Enjoy this event, thank you for your order!</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- Ticket Amount -->
+                            <td class="amount text-center" data-title="Jumlah Tiket">
+                                <span>2 Tiket</span>
+                            </td>
+                            <!-- Ticket Type -->
+                            <td class="type text-center" data-title="Jenis Tiket">
+                                <span>Gold</span>
+                            </td>
+                            <!-- Total Price -->
+                            <td class="price text-center" data-title="Total Bayar">
+                                <span>IDR 400,000</span>
+                            </td>
+                        </tr>
+                        <!-- Duplicate the <tr> block above to add more events -->
+                    </tbody>
+                </table>
+                <!--/ End Shopping Summary -->
+            </div>
+        </div>
+    </div>
+</div>
+
 				</div>
 			</div>
 			<div class="row">
@@ -169,73 +182,264 @@
 	</div>
 	<!--/ End Shopping Cart -->
 			
-	<!-- Start Shop Services Area  -->
-	<section class="shop-services section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-6 col-12">
-					<!-- Start Single Service -->
-					<div class="single-service">
-						<i class="ti-rocket"></i>
-						<h4>Free shiping</h4>
-						<p>Orders over $100</p>
+	<!-- Start Most Popular -->
+	<div class="product-area most-popular section">
+        <div class="container">
+            <div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h2>Other Event</h2>
 					</div>
-					<!-- End Single Service -->
 				</div>
-				<div class="col-lg-3 col-md-6 col-12">
-					<!-- Start Single Service -->
-					<div class="single-service">
-						<i class="ti-reload"></i>
-						<h4>Free Return</h4>
-						<p>Within 30 days returns</p>
-					</div>
-					<!-- End Single Service -->
-				</div>
-				<div class="col-lg-3 col-md-6 col-12">
-					<!-- Start Single Service -->
-					<div class="single-service">
-						<i class="ti-lock"></i>
-						<h4>Sucure Payment</h4>
-						<p>100% secure payment</p>
-					</div>
-					<!-- End Single Service -->
-				</div>
-				<div class="col-lg-3 col-md-6 col-12">
-					<!-- Start Single Service -->
-					<div class="single-service">
-						<i class="ti-tag"></i>
-						<h4>Best Peice</h4>
-						<p>Guaranteed price</p>
-					</div>
-					<!-- End Single Service -->
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Shop Newsletter -->
-	
-	<!-- Start Shop Newsletter  -->
-	<section class="shop-newsletter section">
-		<div class="container">
-			<div class="inner-top">
-				<div class="row">
-					<div class="col-lg-8 offset-lg-2 col-12">
-						<!-- Start Newsletter Inner -->
-						<div class="inner">
-							<h4>Newsletter</h4>
-							<p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
-							<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-								<input name="EMAIL" placeholder="Your email address" required="" type="email">
-								<button class="btn">Subscribe</button>
-							</form>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel popular-slider">
+						<!-- Start Single Product -->
+						<div class="single-product">
+							<div class="product-img">
+								<a href="product-details.html">
+									<img class="default-img" src="images/bruno (1).jpg" alt="#">
+									<img class="hover-img" src="images/bruno (1).jpg" alt="#">
+									<span class="out-of-stock">Hot</span>
+								</a>
+								<div class="button-head">
+									<div class="product-action">
+										<a  title="Detail" href="#"><i class=" ti-eye"></i><span>Detail</span></a>
+										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="#">Get The Ticket</a>
+									</div>
+								</div>
+							</div>
+							<div class="product-content">
+								<h3><a href="product-details.html">Bruno Mars</a></h3>
+								<div class="product-price">
+									<span>IDR 3.500K</span>
+								</div>
+							</div>
 						</div>
-						<!-- End Newsletter Inner -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Shop Newsletter -->
+						<!-- End Single Product -->
+						<!-- Start Single Product -->
+						<div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="images/bayfest new.jpg" alt="#">
+                                    <img class="hover-img" src="images/bayfest new.jpg" alt="#">
+									<span class="new">New</span>
+                                </a>
+								<div class="button-head">
+									<div class="product-action">
+										<a  title="Deatil" href="#"><i class=" ti-eye"></i><span>Detail</span></a>
+										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="#">Get The Ticket</a>
+									</div>
+								</div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Bayfest</a></h3>
+                                <div class="product-price">
+                                    <span>IDR 150k</span>
+                                </div>
+                            </div>
+                        </div>
+						<!-- End Single Product -->
+						<!-- Start Single Product -->
+						<div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="images/avengeld (1).jpg" alt="#">
+                                    <img class="hover-img" src="images/avengeld (1).jpg" alt="#">
+									<span class="out-of-stock">Hot</span>
+                                </a>
+								<div class="button-head">
+									<div class="product-action">
+										<a title="Detail" href="#"><i class=" ti-eye"></i><span>Detail</span></a>
+										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="#">Get The Ticket</a>
+									</div>
+								</div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Avenged Sevenvold</a></h3>
+                                <div class="product-price">
+                                    <span>IDR 3.750k</span>
+                                </div>
+                            </div>
+                        </div>
+						<!-- End Single Product -->
+						<!-- Start Single Product -->
+						<div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="images/green.jpg" href="detail_green.html">
+                                    <img class="hover-img" src="images/green.jpg" href="detail_green.html">
+                                </a>
+								<div class="button-head">
+									<div class="product-action">
+										<a  title="Detail" href="#"><i class=" ti-eye"></i><span>Detail</span></a>
+										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="detail_green.html">Get The Ticket</a>
+									</div>
+								</div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Green Day</a></h3>
+                                <div class="product-price">
+                                    <span>IDR 4.250k</span>
+                                </div>
+                            </div>
+                        </div>
+						<!-- End Single Product -->
+						 <!-- Start Single Product -->
+<div class="single-product">
+    <div class="product-img">
+        <a href="product-details.html">
+            <img class="default-img" src="images/pop.jpeg" alt="#">
+            <img class="hover-img" src="images/pop.jpeg" alt="#">
+            <span class="new">New</span>
+        </a>
+        <div class="button-head">
+            <div class="product-action">
+                <a title="Detail" href="#"><i class="ti-eye"></i><span>Detail</span></a>
+                <a title="Wishlist" href="#" onclick="addToWishlist('Pop Punk Fest', 'IDR 75K', 'images/pop.jpeg')">
+                    <i class="ti-heart"></i><span>Add to Wishlist</span>
+                </a>										
+            </div>
+            <div class="product-action-2">
+                <a title="Add to cart" href="#">Get The Ticket</a>
+            </div>
+        </div>
+    </div>
+    <div class="product-content">
+        <h3><a href="product-details.html">Pop Punk Fest</a></h3>
+        <div class="product-price">
+            <span>IDR 75K</span>
+        </div>
+    </div>
+</div>
+<!-- End Single Product -->
+
+						<!-- Start Single Product -->
+						<div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="images/rc1.png" alt="#">
+                                    <img class="hover-img" src="images/rc1.png" alt="#">
+									<span class="new">New</span>
+                                </a>
+								<div class="button-head">
+									<div class="product-action">
+										<a title="Detail" href="detail1.html"><i class=" ti-eye" ></i><span>Detail</span></a>
+										<a title="Wishlist" href="#" onclick="addToWishlist('Goodnes Rockstar', 'IDR 100K', 'images/rc1.png')">
+											<i class="ti-heart"></i><span>Add to Wishlist</span>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="#">Get The Ticket</a>
+									</div>
+								</div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Goodnes Rockstar</a></h3>
+                                <div class="product-price">
+                                    <span>IDR 100k</span>
+                                </div>
+                            </div>
+                        </div>
+						<!-- End Single Product -->
+						<!-- Start Single Product -->
+						<div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="images/rythm new.jpg" alt="#">
+                                    <img class="hover-img" src="images/rythm new.jpg" alt="#">
+									<span class="new">New</span>
+									
+                                </a>
+								<div class="button-head">
+									<div class="product-action">
+										<a  title="Detail" href="#"><i class=" ti-eye"></i><span>Detail</span></a>
+										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="#">Get The Ticket</a>
+									</div>
+								</div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Poppin Rhythm</a></h3>
+                                <div class="product-price">
+                                    <span>IDR 80k</span>
+                                </div>
+                            </div>
+                        </div>
+						<!-- End Single Product -->
+						<!-- Start Single Product -->
+						<div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="images/pestapora new.jpg" alt="#">
+                                    <img class="hover-img" src="images/pestapora new.jpg" alt="#">
+									<span class="new">New</span>
+								</a>
+								<div class="button-head">
+									<div class="product-action">
+										<a  title="Detail" href="#"><i class=" ti-eye"></i><span>Detail</span></a>
+										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="#">Get The Ticket</a>
+									</div>
+								</div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Pestapora Fest</a></h3>
+                                <div class="product-price">
+                                    <span>IDR 50k</span>
+                                </div>
+                            </div>
+                        </div>
+						<!-- End Single Product -->
+						 <!-- Start Single Product -->
+						<div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img class="default-img" src="images/namoy.jpg" alt="#">
+                                    <img class="hover-img" src="images/namoy.jpg" alt="#">
+									<span class="new">New</span>
+									
+                                </a>
+								<div class="button-head">
+									<div class="product-action">
+										<a  title="Detail" href="#"><i class=" ti-eye"></i><span>Detail</span></a>
+										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="#">Get The Ticket</a>
+									</div>
+								</div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Namoy Budaya</a></h3>
+                                <div class="product-price">
+                                    <span>IDR 75k</span>
+                                </div>
+                            </div>
+                        </div>
+						<!-- End Single Product -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- End Most Popular Area -->
 	
 	
 	
@@ -361,11 +565,9 @@
 					<div class="col-lg-5 col-md-6 col-12">
 						<!-- Single Widget -->
 						<div class="single-footer about">
-							<div class="logo">
-								<a href="index.html"><img src="images/logo2.png" alt="#"></a>
-							</div>
-							<p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue,  magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
-							<p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">+0123 456 789</a></span></p>
+							
+							<p class="text">Find and buy tickets to your favorite events easily here! Get exclusive offers and the latest event updates directly in your inbox. Join us for an unforgettable event experience!</p>
+							<p class="call">Got Question? Call us 24/7<span><a href="contact.php">+6289510457258</a></span></p>
 						</div>
 						<!-- End Single Widget -->
 					</div>
@@ -404,9 +606,9 @@
 							<!-- Single Widget -->
 							<div class="contact">
 								<ul>
-									<li>NO. 342 - London Oxford Street.</li>
-									<li>012 United Kingdom.</li>
-									<li>info@eshop.com</li>
+									<li>Jl.Penamas Tirta 3</li>
+									<li>Kota Malang</li>
+									<li>gigseat@gmail.com</li>
 									<li>+032 3456 7890</li>
 								</ul>
 							</div>
@@ -430,21 +632,16 @@
 					<div class="row">
 						<div class="col-lg-6 col-12">
 							<div class="left">
-								<p>Copyright © 2020 <a href="http://www.wpthemesgrid.com" target="_blank">Wpthemesgrid</a>  -  All Rights Reserved.</p>
+								<p>Copyright © 2024 <a href="" target="_blank">GigSeats</a>  -  All Rights Reserved.</p>
 							</div>
 						</div>
-						<div class="col-lg-6 col-12">
-							<div class="right">
-								<img src="images/payments.png" alt="#">
-							</div>
-						</div>
+						
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
 	<!-- /End Footer Area -->
-	
 	<!-- Jquery -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.0.js"></script>

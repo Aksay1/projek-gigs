@@ -298,11 +298,9 @@ $conn->close();
 					<div class="col-lg-5 col-md-6 col-12">
 						<!-- Single Widget -->
 						<div class="single-footer about">
-							<div class="logo">
-								<a href="index.html"><img src="" alt="#"></a>
-							</div>
-							<p class="text">Get various kinds of tickets you are looking for here!</p>
-							<p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">+0123 456 789</a></span></p>
+							
+							<p class="text">Find and buy tickets to your favorite events easily here! Get exclusive offers and the latest event updates directly in your inbox. Join us for an unforgettable event experience!</p>
+							<p class="call">Got Question? Call us 24/7<span><a href="contact.php">+6289510457258</a></span></p>
 						</div>
 						<!-- End Single Widget -->
 					</div>
@@ -367,23 +365,16 @@ $conn->close();
 					<div class="row">
 						<div class="col-lg-6 col-12">
 							<div class="left">
-								<p>Copyright © 2020 <a href="http://www.wpthemesgrid.com" target="_blank">Wpthemesgrid</a>  -  All Rights Reserved.</p>
+								<p>Copyright © 2024 <a href="" target="_blank">GigSeats</a>  -  All Rights Reserved.</p>
 							</div>
 						</div>
-						<div class="col-lg-6 col-12">
-							<div class="right">
-								<img src="images/payments.png" alt="#">
-							</div>
-						</div>
+						
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
 	<!-- /End Footer Area -->
-	
-	
- 
 	<!-- Jquery -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.0.js"></script>

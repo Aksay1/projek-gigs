@@ -276,7 +276,8 @@
 								<div class="button-head">
 									<div class="product-action">
 										<a  title="Detail" href="#"><i class=" ti-eye"></i><span>Detail</span></a>
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+										<a title="Wishlist" href="#" onclick="addToWishlist('Green Day', 'IDR 4.250k', 'images/green.jpg')">
+											<i class="ti-heart"></i><span>Add to Wishlist</span>
 									</div>
 									<div class="product-action-2">
 										<a title="Add to cart" href="detail_green.html">Get The Ticket</a>
@@ -355,31 +356,34 @@
                 <div class="col-12">
                     <div class="owl-carousel popular-slider">
 						<!-- Start Single Product -->
-						<div class="single-product">
-							<div class="product-img">
-								<a href="product-details.html">
-									<img class="default-img" src="images/pop.jpeg" alt="#">
-									<img class="hover-img" src="images/pop.jpeg" alt="#">
-									<span class="new">New</span>
-								</a>
-								<div class="button-head">
-									<div class="product-action">
-										<a  title="Detail" href="#"><i class=" ti-eye"></i><span>Detail</span></a>
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-									</div>
-									<div class="product-action-2">
-										<a title="Add to cart" href="#">Get The Ticket</a>
-									</div>
-								</div>
-							</div>
-							<div class="product-content">
-								<h3><a href="product-details.html">Pop Punk Fest</a></h3>
-								<div class="product-price">
-									<span>IDR 75K</span>
-								</div>
-							</div>
-						</div>
-						<!-- End Single Product -->
+<div class="single-product">
+    <div class="product-img">
+        <a href="product-details.html">
+            <img class="default-img" src="images/pop.jpeg" alt="#">
+            <img class="hover-img" src="images/pop.jpeg" alt="#">
+            <span class="new">New</span>
+        </a>
+        <div class="button-head">
+            <div class="product-action">
+                <a title="Detail" href="#"><i class="ti-eye"></i><span>Detail</span></a>
+                <a title="Wishlist" href="#" onclick="addToWishlist('Pop Punk Fest', 'IDR 75K', 'images/pop.jpeg')">
+                    <i class="ti-heart"></i><span>Add to Wishlist</span>
+                </a>										
+            </div>
+            <div class="product-action-2">
+                <a title="Add to cart" href="#">Get The Ticket</a>
+            </div>
+        </div>
+    </div>
+    <div class="product-content">
+        <h3><a href="product-details.html">Pop Punk Fest</a></h3>
+        <div class="product-price">
+            <span>IDR 75K</span>
+        </div>
+    </div>
+</div>
+<!-- End Single Product -->
+
 						<!-- Start Single Product -->
 						<div class="single-product">
                             <div class="product-img">
@@ -391,7 +395,8 @@
 								<div class="button-head">
 									<div class="product-action">
 										<a title="Detail" href="detail1.html"><i class=" ti-eye" ></i><span>Detail</span></a>
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+										<a title="Wishlist" href="#" onclick="addToWishlist('Goodnes Rockstar', 'IDR 100K', 'images/rc1.png')">
+											<i class="ti-heart"></i><span>Add to Wishlist</span>
 									</div>
 									<div class="product-action-2">
 										<a title="Add to cart" href="#">Get The Ticket</a>
@@ -494,12 +499,6 @@
 	<!-- End Most Popular Area -->
 	
 	
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Shop Newsletter -->
 	<!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
@@ -622,11 +621,9 @@
 					<div class="col-lg-5 col-md-6 col-12">
 						<!-- Single Widget -->
 						<div class="single-footer about">
-							<div class="logo">
-								<a href="index.html"><img src="" alt="#"></a>
-							</div>
-							<p class="text">Get various kinds of tickets you are looking for here!</p>
-							<p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">+0123 456 789</a></span></p>
+							
+							<p class="text">Find and buy tickets to your favorite events easily here! Get exclusive offers and the latest event updates directly in your inbox. Join us for an unforgettable event experience!</p>
+							<p class="call">Got Question? Call us 24/7<span><a href="contact.php">+6289510457258</a></span></p>
 						</div>
 						<!-- End Single Widget -->
 					</div>
@@ -694,11 +691,7 @@
 								<p>Copyright © 2024 <a href="" target="_blank">GigSeats</a>  -  All Rights Reserved.</p>
 							</div>
 						</div>
-						<div class="col-lg-6 col-12">
-							<div class="right">
-								<img src="images/payments.png" alt="#">
-							</div>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -737,5 +730,14 @@
 	<script src="js/easing.js"></script>
 	<!-- Active JS -->
 	<script src="js/active.js"></script>
+	<script>
+		function addToWishlist(eventName, eventPrice) {
+			let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+			wishlist.push({ name: eventName, price: eventPrice });
+			localStorage.setItem('wishlist', JSON.stringify(wishlist));
+			alert(eventName + " telah ditambahkan ke wishlist!");
+		}
+		</script>	
+			
 </body>
 </html>
