@@ -123,49 +123,73 @@
 	<!-- End Breadcrumbs -->
 			
 	<!-- Shopping Cart -->
-<div class="shopping-cart section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <!-- Shopping Summary -->
-                <table class="table shopping-summery">
-                    <thead>
-                        <tr class="main-hading">
-                            <th>Event</th>
-                            <th class="text-center">Jumlah Tiket</th>
-                            <th class="text-center">Jenis Tiket</th>
-                            <th class="text-center">Total Bayar</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <!-- Event Name, Poster, and Description -->
-                            <td class="product-des" data-title="Event">
-                                <div style="display: flex; align-items: center;">
-                                    <img src="images/green.jpg" alt="Carnaval Ancol" style="width: 100px; height: auto; margin-right: 20px;">
-                                    <div>
-                                        <p class="product-name"><a href="#">Carnaval Ancol</a></p>
-                                        <p class="product-des">Enjoy this event, thank you for your order!</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <!-- Ticket Amount -->
-                            <td class="amount text-center" data-title="Jumlah Tiket">
-                                <span>2 Tiket</span>
-                            </td>
-                            <!-- Ticket Type -->
-                            <td class="type text-center" data-title="Jenis Tiket">
-                                <span>Gold</span>
-                            </td>
-                            <!-- Total Price -->
-                            <td class="price text-center" data-title="Total Bayar">
-                                <span>IDR 400,000</span>
-                            </td>
-                        </tr>
-                        <!-- Duplicate the <tr> block above to add more events -->
-                    </tbody>
-                </table>
-                <!--/ End Shopping Summary -->
+	<div class="shopping-cart section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<!-- Shopping Summary -->
+					<table class="table shopping-summery">
+						<thead>
+							<tr class="main-hading">
+								<th>Event</th>
+								<th class="text-center">Jumlah Tiket</th>
+								<th class="text-center">Jenis Tiket</th>
+								<th class="text-center">Total Bayar</th>
+								<th class="text-center">QRCode</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<!-- Event Name, Poster, and Description -->
+								<td class="product-des" data-title="Event">
+									<div style="display: flex; align-items: center;">
+										<img src="images/green.jpg" alt="Carnaval Ancol" style="width: 100px; height: auto; margin-right: 20px;">
+										<div>
+											<p class="product-name"><a href="#">Carnaval Ancol</a></p>
+											<p class="product-des">Enjoy this event, thank you for your order!</p>
+										</div>
+									</div>
+								</td>
+								<!-- Ticket Amount -->
+								<td class="amount text-center" data-title="Jumlah Tiket">
+									<span>2 Tiket</span>
+								</td>
+								<!-- Ticket Type -->
+								<td class="type text-center" data-title="Jenis Tiket">
+									<span>Gold</span>
+								</td>
+								<!-- Total Price -->
+								<td class="price text-center" data-title="Total Bayar">
+									<span>IDR 400,000</span>
+								</td>
+								<!-- QR Code -->
+								<td class="qrcode text-center" data-title="QRCode">
+									<div id="qrcode-1"></div> <!-- QR Code div with unique id -->
+								</td>
+							</tr>
+							<!-- Duplicate the <tr> block above to add more events -->
+						</tbody>
+					</table>
+					<!--/ End Shopping Summary -->
+					
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+					<script>
+						// Generate QR code for the first row
+						window.onload = function() {
+						  var qrcode1 = new QRCode(document.getElementById("qrcode-1"), {
+							text: "TICKET12345",  // Ubah ini sesuai teks atau URL yang ingin Anda jadikan QR code
+							width: 128,           // Lebar QR code
+							height: 128           // Tinggi QR code
+						  });
+						};
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+				
+                <!--/ End Barcode Section -->
             </div>
         </div>
     </div>
@@ -643,6 +667,7 @@
 	</footer>
 	<!-- /End Footer Area -->
 	<!-- Jquery -->
+	
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.0.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
